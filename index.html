@@ -155,6 +155,36 @@ color: var(--text);
       .about-mark:before { font-size: 18rem; }
       .projects { grid-template-columns: 1fr; }
       .project-visual { height: 240px; }
+      
+.project {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #111 0%, #080808 100%);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+  border-color: rgba(213, 255, 98, 0.55);
+  box-shadow: 0 12px 40px rgba(213, 255, 98, 0.08);
+}
+
+.project-visual {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-word {
+  transition: transform 0.4s ease, letter-spacing 0.4s ease;
+}
+
+.project:hover .visual-word {
+  transform: translateY(-4px);
+  letter-spacing: 2px;
+}
+
       .social-grid { grid-template-columns: 1fr; }
       .social-card { border-right: 0; border-bottom: 1px solid var(--line); min-height: 115px; }
       .social-card:last-child { border-bottom: 0; }
