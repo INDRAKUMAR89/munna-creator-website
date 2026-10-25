@@ -158,7 +158,35 @@ color: var(--text);
     background-attachment: fixed;   
   }
   body {
- }  
+ }
+ 
+.about {
+  padding: 100px 0;
+  background: #0b0b0b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about .section-kicker {
+  color: #d5ff62;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.about h2 {
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 1.1;
+  margin: 0 0 24px;
+  color: #f5f5f0;
+}
+
+.about p {
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.9;
+}
+   
   </style>
 </head>
 <body>
@@ -246,7 +274,19 @@ color: var(--text);
         </div>
       </div>
     </section>
-
+    
+    <section class="about" id="about">
+      <div class="wrap">
+        <div class="section-kicker">02 / About me</div>
+        <h2>Stories are my language.<br>Creativity is my identity.</h2>
+        <p class="muted">
+          I'm MUNNA — a writer, video editor, and content creator.
+          I love turning ideas into stories and creating visuals
+          that connect with people emotionally.
+        </p>
+      </div>
+    </section> 
+    
     <section class="contact" id="contact">
       <div class="wrap">
         <div class="contact-panel reveal visible">
