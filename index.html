@@ -95,9 +95,25 @@ color: var(--text);
     .project { border: 1px solid var(--line); background: #101010; overflow: hidden; transition: transform .25s, border-color .25s; }
     .project:hover { transform: translateY(-6px); border-color: rgba(213,255,98,.5); }
     .project-visual { height: 260px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-    .visual-one { background: radial-gradient(circle at 60% 40%, #414d31, #14170f 40%, #080808 75%); }
-    .visual-two { background: radial-gradient(circle at 35% 30%, #484848, #1b1b1b 42%, #090909 80%); }
-    .visual-three { background: radial-gradient(circle at 55% 45%, #51413a, #201713 42%, #090807 80%); }
+   
+.visual-one {
+  background:
+    linear-gradient(180deg, transparent 40%, #080808 100%),
+    radial-gradient(ellipse at 50% 35%, #7b8154 0%, #303322 30%, #10110e 65%, #050505 100%);
+}
+
+.visual-two {
+  background:
+    linear-gradient(180deg, transparent 40%, #080808 100%),
+    radial-gradient(ellipse at 65% 35%, #777777 0%, #393939 25%, #171717 60%, #050505 100%);
+}
+
+.visual-three {
+  background:
+    linear-gradient(180deg, transparent 40%, #080808 100%),
+    radial-gradient(ellipse at 45% 35%, #80604d 0%, #473127 28%, #201611 60%, #050505 100%);
+}
+
     .visual-word { font-size: clamp(2.8rem, 5vw, 4.7rem); letter-spacing: -.09em; font-weight: 900; color: rgba(255,255,255,.88); transform: rotate(-8deg); }
     .visual-two .visual-word { transform: rotate(5deg); font-style: italic; }
     .visual-three .visual-word { font-size: 3.4rem; letter-spacing: -.06em; }
